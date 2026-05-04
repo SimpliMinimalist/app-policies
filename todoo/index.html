@@ -4,118 +4,212 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todoo - Privacy Policy & Terms</title>
+
   <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --subtext: #64748b;
+      --accent: #2563eb;
+      --border: #e2e8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
       margin: auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #222;
+      padding: 40px 20px;
     }
-    h1, h2 {
-      color: #111;
-    }
-    h1 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-    }
-    section {
+
+    /* Header */
+    .header {
       margin-bottom: 40px;
     }
-    .date {
-      color: #555;
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      color: var(--subtext);
       font-size: 14px;
+    }
+
+    /* Card */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 22px;
       margin-bottom: 20px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #334155;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: var(--subtext);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 15px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .header h1 {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Todoo</h1>
-  <p class="date">Last updated: May 03, 2026</p>
+  <div class="container">
 
-  <section>
-    <h2>Privacy Policy</h2>
+    <!-- Header -->
+    <div class="header">
+      <h1>Todoo</h1>
+      <p>Privacy Policy & Terms of Service</p>
+      <p>Last updated: May 03, 2026</p>
+    </div>
 
-    <h3>1. Overview</h3>
-    <p>
-      Todoo is a minimalist to-do application designed to keep your productivity data private.
-      This Privacy Policy explains how information is handled.
-    </p>
+    <!-- Privacy Policy -->
+    <div class="card">
+      <h2>Privacy Policy</h2>
 
-    <h3>2. Personal Data</h3>
-    <p>
-      The app does not collect, request, or store any personal information such as name, email address,
-      phone number, or location. All features can be used anonymously.
-    </p>
+      <h3>1. Overview</h3>
+      <p>
+        Todoo is a minimalist to-do application designed to keep your productivity data private.
+        This Privacy Policy explains how information is handled.
+      </p>
 
-    <h3>3. Local Storage</h3>
-    <p>
-      All tasks, completion status, and app settings (such as themes) are stored locally on your device.
-    </p>
-    <ul>
-      <li>No access to your tasks</li>
-      <li>No data is transmitted to external servers</li>
-      <li>Data is permanently deleted if the app is uninstalled or cleared</li>
-    </ul>
+      <h3>2. Personal Data</h3>
+      <p>
+        The app does not collect, request, or store any personal information such as name, email address,
+        phone number, or location. All features can be used anonymously.
+      </p>
 
-    <h3>4. Third-Party Services (Payments)</h3>
-    <p>
-      Google Play Billing is used to process premium subscriptions.
-    </p>
-    <ul>
-      <li>Payment information is handled directly by Google</li>
-      <li>Only purchase status is received to unlock features</li>
-      <li>Refer to Google Play’s privacy policy for details</li>
-    </ul>
+      <h3>3. Local Storage</h3>
+      <p>
+        All tasks, completion status, and app settings (such as themes) are stored locally on your device.
+      </p>
+      <ul>
+        <li>No access to your tasks</li>
+        <li>No data is transmitted to external servers</li>
+        <li>Data is permanently deleted if the app is uninstalled or cleared</li>
+      </ul>
 
-    <h3>5. Data Security</h3>
-    <p>
-      Since data remains on your device, its security depends on your device’s protection.
-      No tracking, analytics, or cookies are used.
-    </p>
+      <h3>4. Third-Party Services (Payments)</h3>
+      <p>
+        Google Play Billing is used to process premium subscriptions.
+      </p>
+      <ul>
+        <li>Payment information is handled directly by Google</li>
+        <li>Only purchase status is received to unlock features</li>
+        <li>Refer to Google Play’s privacy policy for details</li>
+      </ul>
 
-    <h3>6. Changes</h3>
-    <p>
-      This policy may be updated occasionally. Updates will be reflected on this page.
-    </p>
-  </section>
+      <h3>5. Data Security</h3>
+      <p>
+        Since data remains on your device, its security depends on your device’s protection.
+        No tracking, analytics, or cookies are used.
+      </p>
 
-  <section>
-    <h2>Terms of Service</h2>
+      <h3>6. Changes</h3>
+      <p>
+        This policy may be updated occasionally. Updates will be reflected on this page.
+      </p>
+    </div>
 
-    <h3>1. Acceptance</h3>
-    <p>
-      By using Todoo, you agree to these terms. If you do not agree, please do not use the app.
-    </p>
+    <!-- Terms -->
+    <div class="card">
+      <h2>Terms of Service</h2>
 
-    <h3>2. Premium Subscription</h3>
-    <ul>
-      <li>Premium removes advertisements from the app</li>
-      <li>Subscriptions are managed and billed by Google Play</li>
-      <li>Refunds and cancellations follow Google Play policies</li>
-    </ul>
+      <h3>1. Acceptance</h3>
+      <p>
+        By using Todoo, you agree to these terms. If you do not agree, please do not use the app.
+      </p>
 
-    <h3>3. User Content</h3>
-    <p>
-      You are responsible for all content created within the app. Data is stored locally and cannot be recovered if lost.
-    </p>
+      <h3>2. Premium Subscription</h3>
+      <ul>
+        <li>Premium removes advertisements from the app</li>
+        <li>Subscriptions are managed and billed by Google Play</li>
+        <li>Refunds and cancellations follow Google Play policies</li>
+      </ul>
 
-    <h3>4. Disclaimer of Warranty</h3>
-    <p>
-      The app is provided "as is" without warranties of any kind. No guarantee is made regarding error-free operation
-      or data preservation.
-    </p>
+      <h3>3. User Content</h3>
+      <p>
+        You are responsible for all content created within the app. Data is stored locally and cannot be recovered if lost.
+      </p>
 
-    <h3>5. Limitation of Liability</h3>
-    <p>
-      To the maximum extent permitted by law, no liability is accepted for data loss, damages, or other issues
-      resulting from use of the app.
-    </p>
-  </section>
+      <h3>4. Disclaimer of Warranty</h3>
+      <p>
+        The app is provided "as is" without warranties of any kind. No guarantee is made regarding error-free operation
+        or data preservation.
+      </p>
 
-  <p><strong>Contact:</strong> your@email.com</p>
+      <h3>5. Limitation of Liability</h3>
+      <p>
+        To the maximum extent permitted by law, no liability is accepted for data loss, damages, or other issues
+        resulting from use of the app.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Contact: your@email.com</p>
+    </div>
+
+  </div>
 
 </body>
 </html>
